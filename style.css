@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4; 
+    color: #333; 
+}
+
+/* Header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #0a0a0a; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
+}
+
+/* Navigation */
+.nav {
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #f14040; /* Primary color */
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #000000; /* Darker shade on hover */
+}
+
+/* Main section */
+.hero {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #666; /* Softer text color */
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Clipping for rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card img {
+    border-bottom: 2px solid #3f3f3f; /* Accent color */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px; /* Rounded buttons */
+    padding: 10px 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.btn-secondary {
+    background-color: #f1f1f1;
+    border: none;
+    color: #141414;
+}
+
+.btn-secondary:hover {
+    background-color: #444040; /* Slightly darker on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #585858; /* White background for footer */
+    border-top: 1px solid #646363; /* Soft border */
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

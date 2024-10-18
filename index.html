@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purr-fect Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #2f2f30;
+        }
+        .hero {
+            text-align: center;
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-light py-3 sticky-header">
+        <div class="container d-flex justify-content-between">
+            <h1 class="logo">Purr-fect</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div>
+                <button class="btn btn-primary mr-2" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                <button class="btn btn-secondary" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container my-5">
+        <section class="hero">
+            <h2>Welcome to Purr-fect Blog — Your Ultimate Cat Companion</h2>
+            <p>Join Grei and discover tips, stories, and more for your feline friend!</p>
+            <img src="cat-1.jpg" alt="Grei the Cat" class="img-fluid small-rectangle" />
+        </section>
+
+        <section id="about" class="text-center">
+            <h2>About Grei</h2>
+            <p>Welcome to the world of Grei, a curious cat with a love for adventure and mischief! Follow Grei's journey as we explore cat care tips, fun stories, and adorable antics.</p>
+        </section>
+
+        <section id="blog" class="my-5">
+            <h2 class="text-center">Latest Blog Posts</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="cat-2.jpg" class="card-img-top" alt="Blog Post 1">
+                        <div class="card-body">
+                            <h5 class="card-title">A Day in the Life of Grei</h5>
+                            <p class="card-text">Join Grei on a typical day filled with naps, playtime, and snacks!</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="cat-3.jpg" class="card-img-top" alt="Blog Post 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Top 10 Cat Toys Reviewed</h5>
+                            <p class="card-text">Discover the best toys for your feline friend and keep them entertained.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="cat-4.jpg" class="card-img-top" alt="Blog Post 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Why Cats Purr: Understanding Feline Behavior</h5>
+                            <p class="card-text">Explore the reasons behind why cats purr and what it means for their health.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Sign In Modal -->
+    <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember Me</label>
+                        </div>
+                        <a href="#">Forgot Password?</a>
+                        <button type="submit" class="btn btn-primary mt-3">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpEmail">Email</label>
+                            <input type="email" class="form-control" id="signUpEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signUpPassword">Password</label>
+                            <input type="password" class="form-control" id="signUpPassword" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                            <label class="form-check-label" for="termsCheck">I agree to the Terms & Conditions</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-light py-3 text-center">
+        <div class="container">
+            <p>Quick Links: 
+                <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">FAQs</a>
+            </p>
+            <p>Connect with us: 
+                <a href="#">Facebook</a> | <a href="#">Instagram</a>
+            </p>
+            <p>Contact: greithecat@example.com</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
